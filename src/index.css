@@ -1,0 +1,42 @@
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Design Tokens ── */
+:root {
+  --bg:           #0b0c14;
+  --surface:      #13141f;
+  --card:         #1a1b28;
+  --card-hover:   #1f2035;
+  --border:       #272840;
+  --accent:       #7c6ff7;
+  --accent-glow:  rgba(124,111,247,0.25);
+  --accent2:      #f76f8e;
+  --success:      #4ade80;
+  --warning:      #fbbf24;
+  --danger:       #f87171;
+  --text:         #e2e4f0;
+  --text-muted:   #6b6d8a;
+  --radius:       14px;
+  --radius-sm:    8px;
+  --shadow:       0 8px 32px rgba(0,0,0,0.5);
+  --transition:   0.2s ease;
+}
+
+/* ── Base ── */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+input  { font-family: 'DM Sans', sans-serif; }
